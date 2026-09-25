@@ -185,6 +185,8 @@ void task_sensor_statechart(uint32_t index)
 				p_task_sensor_dta->state = ST_BTN_UP;
 			}
 		
+			break;
+		
 		default:
 
 			p_task_sensor_dta->tick  = DEL_BTN_MIN;
