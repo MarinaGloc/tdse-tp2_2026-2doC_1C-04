@@ -102,6 +102,8 @@ extern "C" {
 #define LED_C_ON		GPIO_PIN_SET
 #define LED_C_OFF		GPIO_PIN_RESET
 
+#endif
+
 /* STM32 Nucleo Boards - 144 Pins */
 #if ((BOARD == NUCLEO_F413ZH) || (BOARD == NUCLEO_F429ZI) || (BOARD == NUCLEO_F439ZI) || (BOARD == NUCLEO_F767ZI))
 
