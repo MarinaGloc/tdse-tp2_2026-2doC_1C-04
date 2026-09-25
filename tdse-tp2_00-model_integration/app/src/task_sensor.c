@@ -180,7 +180,7 @@ void task_sensor_statechart(uint32_t index)
 				p_task_sensor_dta->tick--;
 			else if(EV_BTN_DOWN == p_task_sensor_dta->event)
 				p_task_sensor_dta->state = ST_BTN_DOWN;
-			else ifEV_BTN_UP == p_task_sensor_dta->event(){
+			else if(EV_BTN_UP == p_task_sensor_dta->event){
 				put_event_task_system(p_task_sensor_cfg->signal_up);
 				p_task_sensor_dta->state = ST_BTN_UP;
 			}
