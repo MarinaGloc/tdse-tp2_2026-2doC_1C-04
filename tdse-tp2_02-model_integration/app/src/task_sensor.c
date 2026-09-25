@@ -58,6 +58,10 @@
 /********************** internal data declaration ****************************/
 const task_sensor_cfg_t task_sensor_cfg_list[] = {
 	{ID_BTN_A,  BTN_A_PORT,  BTN_A_PIN,  BTN_A_PRESSED, DEL_BTN_MAX,
+	 EV_SYS_BTN_UP, EV_SYS_BTN_DOWN},
+	{ID_BTN_B,  BTN_B_PORT,  BTN_B_PIN,  BTN_B_PRESSED, DEL_BTN_MAX,
+	 EV_SYS_BTN_UP, EV_SYS_BTN_DOWN},
+	{ID_BTN_C,  BTN_C_PORT,  BTN_C_PIN,  BTN_C_PRESSED, DEL_BTN_MAX,
 	 EV_SYS_BTN_UP, EV_SYS_BTN_DOWN}
 };
 
@@ -184,6 +188,7 @@ void task_sensor_statechart(uint32_t index)
 				put_event_task_system(p_task_sensor_cfg->signal_up);
 				p_task_sensor_dta->state = ST_BTN_UP;
 			}
+			break;
 		
 		default:
 
