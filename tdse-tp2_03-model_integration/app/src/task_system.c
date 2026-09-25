@@ -217,8 +217,8 @@ void task_system_normal_statechart(void)
 		default:
 
 			p_task_system_dta->tick  = DEL_SYS_MIN;
-			p_task_system_dta->state = ST_SYS_IDLE;
-			p_task_system_dta->event = EV_SYS_IDLE;
+			p_task_system_dta->state = ST_SYS_WAIT_FOR_CAR_ARRIVE;
+			p_task_system_dta->event = EV_SYS_SENSOR_COIL;
 			p_task_system_dta->flag = false;
 
 			break;
