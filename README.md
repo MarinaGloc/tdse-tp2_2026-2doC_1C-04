@@ -4,4 +4,4 @@
 ### Responsable de la entrega:
 | Padrón | Apellidos, Nombres | Fecha | Deadline |
 | :----- | :--------------------- | :------: | :-------: |
-| XXXXXX | YYYY, ZZZ | | Semana 06 |
+| 103462 | Schapira, Franco Alberto | 27/09/2026 | Semana 06 |
