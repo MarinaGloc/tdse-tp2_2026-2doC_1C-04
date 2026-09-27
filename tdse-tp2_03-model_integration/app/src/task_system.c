@@ -184,7 +184,7 @@ void task_system_normal_statechart(void)
 
 			if (p_task_system_dta->tick > 0)
 				p_task_system_dta->tick--;
-			else if(tick == 0){
+			else {
 				put_event_task_actuator(EV_LED_ON, ID_LED_BARRIER_OPEN);
 				p_task_system_dta->state = ST_SYS_WAIT_FOR_CAR_LEAVES;
 			}
@@ -207,7 +207,7 @@ void task_system_normal_statechart(void)
 
 			if (p_task_system_dta->tick > 0)
 				p_task_system_dta->tick--;
-			else if(tick == 0){
+			else {
 				put_event_task_actuator(EV_LED_ON, ID_LED_BARRIER_CLOSE);
 				p_task_system_dta->state = ST_SYS_WAIT_FOR_CAR_ARRIVE;
 			}

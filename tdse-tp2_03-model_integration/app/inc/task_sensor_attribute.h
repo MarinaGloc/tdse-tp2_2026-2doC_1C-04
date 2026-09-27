@@ -47,9 +47,7 @@ extern "C" {
 /********************** typedef **********************************************/
 /* Events to excite Task Sensor */
 typedef enum task_sensor_ev {EV_BTN_UP,
-							 EV_BTN_DOWN,
-							 EV_SYS_BTN_UP,
-							 EV_SYS_BTN_DOWN
+							 EV_BTN_DOWN
 } task_sensor_ev_t;
 
 /* States of Task Sensor */
@@ -62,7 +60,9 @@ typedef enum task_sensor_st {
 
 /* Identifier of Task Sensor */
 typedef enum task_sensor_id {
-			ID_BTN_A
+			ID_BTN_A,
+			ID_BTN_B,
+			ID_BTN_C
 } task_sensor_id_t;
 
 typedef struct
